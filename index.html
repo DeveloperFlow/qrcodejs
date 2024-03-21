@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A brief Tutorial on how to use the qrcode.js library</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="lib/css/literal.css">
+    <script defer src="lib/js/basics.js"></script>
+    <script defer src="lib/js/ui.js"></script>
+    <script defer src="js/general.js"></script>
+    <script defer src="qrcodejs/qrcode.js"></script>
+    <script defer src="js/index.js"></script>
+    <style>
+        #intro{min-height:80vh; font-size:20px}
+        #intro .col{width:50%}
+        #created-code *{margin:auto}
+    </style>
+</head>
+<body class="my-fonts">
+    <div class="flex vcenter apart" id="menu">
+        <h2 class="little-pad no-margin" id="logo">
+            <a href="/" class="theme-1-text">QRCODE.Js</a>
+        </h2>
+        <div class="links flex vcenter space-evenly">
+            <a href="tutorial.html">Tutorial</a>
+            <a href="methods.html">Methods</a>
+            <div class="toggle-container">
+                <input type="checkbox" id="darkmode-toggler">
+                <span class="round"></span>
+            </div>
+        </div>
+    </div>
+    <div id="intro" class="minor-pad flex vcenter">
+        <div class="col-1 col">
+            <h2>QRCode.js, your go to qrcode library</h2>
+            QRCode.js is a JavaScript library designed for generating QR codes efficiently.
+            It also has wide cross-broswer compatibility. 
+            Notably, QRCode.js operates independently, devoid of any external dependencies.<br/>
+            So this brief tutorial will guide you on how to use the library for the possible use cases.
+            The library is open source and is hosted on github
+            <div class="flex vcenter apart space-up">
+                <div style="width:50%">
+                    <button class="button bit-curved transparent pad">
+                        <a href="https://github.com/davidshimjs/qrcodejs">
+                            Visit Repo
+                        </a>
+                    </button>
+                </div>
+                <div style="width:50%">
+                    <button class="button bit-curved transparent pad">
+                        <a href="tutorial.html">
+                            Begin Tutorial
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-2 col">
+            <h2 class="center-text normal-text">Demo</h2>
+            <div class="input-inline auto-margin" style="max-width:500px">
+                <input type="text" id="code-input" class="curved minor-pad input"
+                placeholder="Enter any piece of information" 
+                value="https://github.com/davidshimjs/qrcodejs">
+                <button class="button minor-pad curved" id="create-button">Create</button>
+            </div>
+            <div id="created-code" class="space-up"></div>
+        </div>
+    </div>
+</body>
+</html>
